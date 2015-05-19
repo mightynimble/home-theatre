@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150517202402) do
+ActiveRecord::Schema.define(version: 20150519020807) do
 
   create_table "media", force: true do |t|
     t.string   "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150517202402) do
     t.string   "subtitle_path"
     t.datetime "created"
     t.datetime "updated"
+    t.text     "image"
   end
 
 end
