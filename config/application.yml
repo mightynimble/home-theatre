@@ -1,11 +1,11 @@
 defaults: &defaults
-  movie_path: D:\\01. HD Movies
-  tv_path: D:\\07. TV Shows
+  movie_path: D:\01. HD Movies
+  tv_path: D:\07. TV Shows
 
 development:
   <<: *defaults
-  movie_path: G:\\1.HD Movies
-  tv_path: G:\\2.TV Shows
+  movie_path: G:\1.HD Movies
+  tv_path: G:\2.TV Shows
 
 test:
   <<: *defaults

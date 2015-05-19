@@ -1,7 +1,8 @@
 class MediaController < ApplicationController
 
-  def create_all
-
+  def initialize_library
+    @all_lib_items = Media.setup_library
+    render nothing: true, status: :ok
   end
 
   def index
