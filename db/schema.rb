@@ -11,16 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519020807) do
+ActiveRecord::Schema.define(version: 20150522005039) do
 
-  create_table "media", force: true do |t|
-    t.string   "name"
-    t.string   "file_path"
-    t.string   "media_type"
-    t.string   "subtitle_path"
-    t.datetime "created"
-    t.datetime "updated"
-    t.text     "image"
+  create_table "movies", force: true do |t|
+    t.string   "title"
+    t.string   "full_path"
+    t.string   "sub_path"
+    t.string   "year"
+    t.string   "imdb_score"
+    t.integer  "imdb_votes"
+    t.string   "rated"
+    t.string   "runtime"
+    t.string   "genre"
+    t.string   "box_office"
+    t.datetime "inserted"
+    t.datetime "last_visited"
+  end
+
+  create_table "tv_shows", force: true do |t|
+    t.string "full_path"
+    t.string "title"
+    t.string "episode"
+    t.string "season"
+    t.string "imdb_score"
+    t.string "year"
+    t.string "sub_path"
   end
 
 end
